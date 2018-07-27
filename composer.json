@@ -6,6 +6,6 @@
         "btj"
     ],
    "require": {
-        "fabpot/goutte": "3.2.3",
+        "fabpot/goutte": "3.2.3"
    }
 }
