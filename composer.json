@@ -1,0 +1,8 @@
+{
+    "name": "btj/scrapper",
+    "type": "library",
+    "description": "BTJ scrapping library integration",
+    "keywords": [
+        "btj"
+    ],
+}
