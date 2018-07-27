@@ -5,4 +5,7 @@
     "keywords": [
         "btj"
     ],
+   "require": {
+        "fabpot/goutte": "3.2.3",
+   }
 }
