@@ -1,29 +1,18 @@
 <?php
 
-namespace BTJ\Scrapper;
+namespace BTJ\Scrapper\Service;
 
 use Goutte\Client;
 use BTJ\Scrapper\Container;
 
-class CSLibraryService extends ScrapperService {
-
+class AxiellLibraryService extends ScrapperService {
   public function EventScrap($url) {
-    /*    $crawler = $client->request('GET', $url . '/calendar/html?fDateMin=2018-07-26');
-
-    $crawler->filter('a.page-link')->each(function($node) use ($url, $client,
-     $scrapper ) {
-      $href = $node->attr('href');
-      $event = $client->request('GET', $url . $href);
-      //
-     $scrapper->getNode($event);
-    });*/
-
-
-
     $container = new Container\EventContainer();
-    $container->setTitle('CS Library title');
-
+    $container->setTitle('Axiel library title');
     return $container;
+
+    $client = new Client();
+    $event = $client->request('GET', $url . $href);
   }
 
   public function NewsScrap($news) {
